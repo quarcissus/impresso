@@ -264,7 +264,13 @@ header img {
 	}
 	/*??banner media*/
 }
-
+@media only screen and (min-width: 1028px) {
+	/* ??menu media*/
+	header {
+		flex-direction: row !important;
+	}
+	/* ??end menu media*/
+}
 @media only screen and (max-width: 768px) {
 	/* ??menu media*/
 	header {
