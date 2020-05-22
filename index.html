@@ -3,6 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--[if lt IE 9
+			]><script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script
+		><![endif]-->
+
 		<!-- bootstrap -->
 		<link
 			rel="stylesheet"
@@ -19,6 +23,9 @@
 		<link rel="stylesheet" href="./normalize.css" />
 		<!-- DEV STYLES -->
 		<link rel="stylesheet" href="./style.css" />
+
+		<!-- utilitys -->
+		<link rel="stylesheet" href="./utilitys.css" />
 		<title>Impresso</title>
 	</head>
 	<body>
@@ -52,44 +59,114 @@
 					</div>
 				</div>
 			</nav>
-			<section class="right_section">
-				<i class="fas fa-phone-alt"></i>
-				<div>01 449 970 79 84</div>
-			</section>
 		</header>
 		<main>
 			<section class="banner">
-				<div class="banner-container">
-					<div class="banner_text">
-						<div>IMPRIMIR <span class="not_bold">CON</span></div>
-						<div>
-							NOSOTROS <span class="not_bold">SIEMPRE</span>
+				<div
+					id="carouselExampleSlidesOnly"
+					class="carousel slide"
+					data-ride="carousel"
+				>
+					<div class="carousel-inner">
+						<div
+							class="carousel-item active"
+							data-interval="200000"
+						>
+							<img
+								src="./imgs/carousel_1.jpg"
+								class="d-block w-100"
+								alt="..."
+							/>
 						</div>
-						<div><span class="not_bold">ES</span> MEJOR</div>
+						<div class="carousel-item" data-interval="2000">
+							<img
+								src="./imgs/carousel_2.jpg"
+								class="d-block w-100"
+								alt="..."
+							/>
+						</div>
+						<div class="carousel-item" data-interval="2000">
+							<img
+								src="./imgs/carousel_3.jpg"
+								class="d-block w-100"
+								alt="..."
+							/>
+						</div>
 					</div>
 				</div>
-			</section>
-			<section class="options">
-				<a class="option_item" href="#">
-					<div class="option_title">IMPRESION <br />PUBLICITARIA</div>
-					<i class="fas fa-print option_1"></i>
-				</a>
-				<a class="option_item" href="#">
-					<div class="option_title">IMPRESION <br />COMERCIAL</div>
-					<i class="far fa-copy option_2"></i>
-				</a>
-				<a class="option_item" href="./automotriz.html">
-					<div class="option_title">
-						SERVICIOS PARA LA INDUSTRIA <br />AUTOMOTRIZ Y
-						ELECTRONICA
+				<section class="split_section">
+					<article class="left">
+						Impresso con 15 años de experiencia <br />
+						Elaborando impresos en papeles y cartulinas
+						<br />Empaques y embalajes en Eva, Coroplast y Sunply
+					</article>
+					<div class="right">
+						<div class="right_row row_1">
+							<div>Formas Autocopiantes</div>
+							<div>Folletos</div>
+						</div>
+						<div class="right_row row_2">
+							<div>Cajas y Empaques Plegadizos</div>
+							<div>Revistas</div>
+						</div>
+						<div class="right_row row_3">
+							<div>Etiquetas Adheribles</div>
+						</div>
 					</div>
-					<i class="fas fa-industry option_3"></i>
-				</a>
-				<a class="option_item" href="#">
-					<div class="option_title">OTROS SERVICIOS</div>
-					<i class="far fa-list-alt option_4"></i>
-				</a>
+				</section>
+				<section class="options">
+					<a href="#" class="option-item">
+						<img
+							class="icon-option"
+							src="./icons/FABRICA.png"
+							alt=""
+						/>
+						<p class="option-text">
+							Industria Automotriz <br />y Electronica
+						</p>
+					</a>
+					<a href="#" class="option-item">
+						<div class="triple-icons">
+							<img
+								class="icon-option"
+								src="./icons/COMERCIO.png"
+								alt=""
+							/>
+							<img
+								class="icon-option"
+								src="./icons/SALUDO.png"
+								alt=""
+							/>
+							<img
+								class="icon-option"
+								src="./icons/publi.png"
+								alt=""
+							/>
+						</div>
+						<p class="option-text">
+							Comercio Empresas y publicidad
+						</p>
+					</a>
+					<a href="#" class="option-item">
+						<img
+							class="icon-option"
+							src="./icons/SUAJE.png"
+							alt=""
+						/>
+						<p class="option-text">Maquila Suaje</p>
+					</a>
+				</section>
 			</section>
+			<marquee class="moving_text" scrollamount="25">
+				<div class="moving_row_1">
+					<span>IMPRESOS EN</span>
+					<span>EMPAQUES</span>
+				</div>
+				<div class="moving_row_2">
+					<span>PAPELES Y CARTULINAS,</span>
+					<span>Y EMBALAJES</span>
+				</div>
+			</marquee>
 		</main>
 
 		<!-- JS, Popper.js, and jQuery -->
@@ -109,5 +186,6 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="./app.js"></script>
+		<script type="text/javascript" src="./flexie.js"></script>
 	</body>
 </html>

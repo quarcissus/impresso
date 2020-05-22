@@ -1,0 +1,28 @@
+.bblack {
+	background-color: black !important;
+}
+
+.bgreen {
+	background-color: green !important;
+}
+
+.bblue {
+	background-color: blue !important;
+}
+.bgray {
+	background-color: gray !important;
+}
+.bred {
+	background-color: red !important;
+}
+
+.fontwhite {
+	color: white !important;
+}
+
+.fontblack {
+	color: black !important;
+}
+.nonedisp {
+	display: none !important;
+}
