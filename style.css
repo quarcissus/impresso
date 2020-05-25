@@ -683,7 +683,6 @@ header img {
 }
 
 /*!! height medias*/
-
 @media only screen and (min-height: 950px) {
 	.split_section .left {
 		font-size: 2em;
@@ -706,6 +705,7 @@ header img {
 		font-weight: 700;
 		color: white;
 	}
+
 	.moving_row_1 span:nth-child(1) {
 		margin-right: 30vw;
 	}
@@ -715,6 +715,9 @@ header img {
 	}
 	.moving_row_2 span:nth-child(1) {
 		margin-right: 17vw;
+	}
+	.right_row {
+		margin-top: -0.5%;
 	}
 }
 @media only screen and (min-height: 1050px) {
@@ -726,6 +729,9 @@ header img {
 		padding: 0.3% 2% 0% 3.5%;
 		max-height: 14vh;
 		min-height: 14vh;
+	}
+	.right_row {
+		margin-top: 0%;
 	}
 }
 
