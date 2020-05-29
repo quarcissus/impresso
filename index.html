@@ -3,34 +3,35 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!--[if lt IE 9
-			]><script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script
-		><![endif]-->
-
-		<!-- bootstrap -->
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
 			crossorigin="anonymous"
 		/>
-		<!-- fontawesome -->
 		<script
 			src="https://kit.fontawesome.com/31de0ff71f.js"
 			crossorigin="anonymous"
 		></script>
-		<!-- Normalize -->
 		<link rel="stylesheet" href="./normalize.css" />
-		<!-- DEV STYLES -->
-		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="style.css" />
 
-		<!-- utilitys -->
-		<link rel="stylesheet" href="./utilitys.css" />
-		<title>Impresso</title>
+		<title>Impresso OnLine</title>
 	</head>
 	<body>
 		<header>
-			<img src="./imgs/LOGO_2.png" alt="Logo" />
+			<div class="logo-container">
+				<img class="logo" src="./imgs/LOGO_2.png" alt="Logo" />
+			</div>
+			<div class="contact-menu">
+				<div>
+					<i class="fab fa-whatsapp-square"></i
+					><span>(449)542 16 74</span>
+				</div>
+				<div>
+					<i class="fas fa-phone-alt"></i><span>(449) 970 79 84</span>
+				</div>
+			</div>
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<button
 					class="navbar-toggler"
@@ -43,6 +44,7 @@
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
+
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 					<div class="navbar-nav">
 						<a
@@ -51,125 +53,39 @@
 							>Empresa
 						</a>
 						<a class="nav-item nav-link link hover-effect" href="#"
-							>Productos y Servicios</a
+							>Servicio</a
 						>
 						<a class="nav-item nav-link link hover-effect" href="#"
 							>Contacto</a
+						>
+						<a class="nav-item nav-link link hover-effect" href="#"
+							>Privacidad</a
 						>
 					</div>
 				</div>
 			</nav>
 		</header>
-		<main>
-			<section class="banner">
-				<div
-					id="carouselExampleSlidesOnly"
-					class="carousel slide"
-					data-ride="carousel"
-				>
-					<div class="carousel-inner">
-						<div class="carousel-item active" data-interval="2000">
-							<img
-								src="./imgs/carousel_1.jpg"
-								class="d-block w-100"
-								alt="..."
-							/>
-						</div>
-						<div class="carousel-item" data-interval="2000">
-							<img
-								src="./imgs/carousel_2.jpg"
-								class="d-block w-100"
-								alt="..."
-							/>
-						</div>
-						<div class="carousel-item" data-interval="2000">
-							<img
-								src="./imgs/carousel_3.jpg"
-								class="d-block w-100"
-								alt="..."
-							/>
-						</div>
-					</div>
-				</div>
-				<section class="split_section">
-					<article class="left">
-						<span class="left-decoration"
-							>15 Años de experiencia</span
-						>
-						<br />
-						elaborando impresos en papeles y cartulinas
-						<br />empaques y embalajes en Eva, Coroplast y
-						Sunply<span class="registered">&#174;</span>
-					</article>
-					<div class="right">
-						<div class="right_row row_1">
-							<div>Formas Autocopiantes</div>
-							<div>Folletos</div>
-						</div>
-						<div class="right_row row_2">
-							<div>Cajas y Empaques Plegadizos</div>
-							<div>Revistas</div>
-						</div>
-						<div class="right_row row_3">
-							<div>Etiquetas Adheribles</div>
-						</div>
-					</div>
-				</section>
-				<section class="options">
-					<a href="#" class="option-item">
-						<img
-							class="icon-option"
-							src="./icons/FABRICA.png"
-							alt=""
-						/>
-						<p class="option-text">
-							Industria Automotriz <br />y Electronica
-						</p>
-					</a>
-					<a href="#" class="option-item">
-						<div class="triple-icons">
-							<img
-								class="icon-option"
-								src="./icons/COMERCIO.png"
-								alt=""
-							/>
-							<img
-								class="icon-option"
-								src="./icons/SALUDO.png"
-								alt=""
-							/>
-							<img
-								class="icon-option"
-								src="./icons/publi.png"
-								alt=""
-							/>
-						</div>
-						<p class="option-text">
-							Comercio Empresas y publicidad
-						</p>
-					</a>
-					<a href="#" class="option-item">
-						<img
-							class="icon-option"
-							src="./icons/SUAJE.png"
-							alt=""
-						/>
-						<p class="option-text">Maquila Suaje</p>
-					</a>
-				</section>
-			</section>
-			<marquee class="moving_text" scrollamount="25">
-				<div class="moving_row_1">
-					<span>IMPRESOS EN</span>
-					<span>EMPAQUES</span>
-				</div>
-				<div class="moving_row_2">
-					<span>PAPELES Y CARTULINAS,</span>
-					<span>Y EMBALAJES</span>
-				</div>
-			</marquee>
-		</main>
 
+		<main>
+			<div class="banner-container">
+				<div class="banner__left">
+					<div class="banner-left__image"></div>
+					<div class="banner-left__text">
+						Impresos en papeles y cartulinas, empaques, racks y
+						divisores en Eva, Coroplast y Sunply
+					</div>
+					<button class="banner-left__cta">Contacta ahora</button>
+				</div>
+				<div class="banner__right">
+					<div class="banner-text__container">
+						Estamos<br />
+						listos para<br />
+						<span>comenzar</span><br />
+						<span>tu proyecto !!!</span>
+					</div>
+				</div>
+			</div>
+		</main>
 		<!-- JS, Popper.js, and jQuery -->
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -187,6 +103,5 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="./app.js"></script>
-		<script type="text/javascript" src="./flexie.js"></script>
 	</body>
 </html>
