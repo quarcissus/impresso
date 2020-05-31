@@ -39,6 +39,7 @@ header {
 .navbar {
 	width: 25%;
 	padding-bottom: 0 !important;
+	padding-left: 0 !important;
 }
 
 .navbar-nav {
@@ -111,4 +112,262 @@ header {
 }
 .banner-text__container {
 	margin: 0 auto;
+}
+/* !!options section */
+.options {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: center;
+	width: 50vw;
+	margin: 1% auto 1% auto;
+	/* position: absolute;
+	bottom: 0;
+	left: 50%; */
+	/* align-items: baseline;
+	margin-left: -25vw; */
+	padding-bottom: 0.5%;
+}
+
+.options .option-item:nth-child(2) {
+	margin: 0 4%;
+}
+
+.option-item {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.486);
+	padding: 10px;
+	border-radius: 30px;
+	transition: all 250ms ease-out;
+}
+.triple-icons {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.triple-icons img {
+	margin: 0 3%;
+}
+.option-item img {
+	width: 4vw;
+	height: auto;
+}
+
+.icon-option {
+	height: auto;
+	object-fit: cover;
+	display: block;
+	mix-blend-mode: multiply;
+}
+
+.option-item:hover {
+	background-color: rgba(255, 255, 255, 0.842);
+	box-shadow: 3px 3px 10px rgba(109, 109, 109, 0.541);
+}
+
+.option-item:link {
+	text-decoration: none;
+}
+
+.option-item div:last-child {
+	text-align: center;
+}
+
+/*order each option icon*/
+/*industry*/
+.options a:nth-child(1) {
+	order: 1;
+}
+/* hands*/
+.options a:nth-child(2) {
+	order: 2;
+}
+
+/* box*/
+.options a:nth-child(3) {
+	order: 3;
+}
+.triple-icons {
+	padding-left: 20px;
+}
+/* comercio icon */
+.triple-icons img:nth-child(1) {
+	width: 6.5vw;
+}
+/* manos icon */
+.triple-icons img:nth-child(2) {
+	width: 3.2vw;
+}
+/* corneta icon */
+.triple-icons img:nth-child(3) {
+	width: 3.6vw;
+}
+/* caja */
+.options a:last-child img {
+	width: 7vw;
+}
+
+.option-text {
+	padding-top: 15px;
+	color: black;
+	font-size: 1em;
+	font-weight: 500;
+	text-align: center;
+	line-height: 1;
+}
+.option-text:hover {
+	color: black;
+}
+
+/* !!separation */
+.separation {
+	background-color: rgb(44, 51, 83);
+	height: 3vw;
+	padding: 0.5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.separtion-text {
+	color: white;
+	font-size: 2rem;
+	text-align: center;
+}
+
+/* !!Industria automotriz */
+
+/* ?? left part */
+.snd-part {
+	height: 85vh;
+	display: flex;
+	flex-direction: row;
+}
+.snd-part-left {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 60%;
+}
+
+.snd-part-right {
+	width: 40%;
+}
+.snd-part-left {
+	padding: 3%;
+	margin-top: 5%;
+	padding-right: 1%;
+	padding-top: 2%;
+}
+.snd-part__header {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	margin-bottom: 7%;
+}
+.snd-part__header img {
+	width: 18%;
+	max-height: 130px;
+	position: relative;
+}
+.snd-part__title {
+	font-size: 4rem;
+	line-height: 1;
+	margin-left: 4%;
+	color: rgb(24, 28, 46);
+	font-weight: 600;
+}
+
+.snd-part__text {
+	font-size: 1.35rem;
+	font-weight: 500;
+	color: rgb(66, 66, 66);
+	padding-right: 6%;
+}
+/* ??right part */
+.snd-part-right {
+	margin-top: 1%;
+}
+.snd-part-right__item-container {
+	display: flex;
+	flex-direction: row;
+}
+.right__item-left {
+	position: relative;
+	width: 25%;
+	display: flex;
+	align-items: center;
+}
+.right__item-left img {
+	width: 95%;
+	justify-self: center;
+	transform: rotate(10deg);
+}
+.right__item-left .title-img {
+	position: absolute;
+	top: 10%;
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+.right__item-right {
+	flex-wrap: wrap;
+}
+.info-title {
+	font-size: 1.7rem;
+	font-weight: 700;
+	margin-bottom: 8%;
+	display: flex;
+	flex-direction: row;
+}
+.info-title i {
+	align-self: center;
+}
+.info-item {
+	padding-right: 30px;
+	max-width: 492px;
+}
+.info-item p {
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	font-size: 1.2rem;
+}
+
+.right__item-left.coroplast img {
+	transform: rotate(0deg) !important;
+	width: 75%;
+}
+
+.fa-caret-right {
+	color: red;
+	font-size: 1.5rem;
+	padding-right: 8px;
+}
+.fa-check {
+	color: rgb(9, 179, 9);
+	padding-right: 6px;
+}
+
+.two-lines-par {
+	display: flex;
+	flex-direction: row;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	font-size: 1.2rem;
 }
