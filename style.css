@@ -465,8 +465,11 @@ header {
 	flex-direction: row;
 	width: 100%;
 	height: 250px;
+	margin-top: 5%;
 }
-
+.gallery-right .row-img:last-child {
+	margin-top: 2%;
+}
 .item-one-img {
 	display: flex;
 	flex-direction: column;
@@ -562,4 +565,52 @@ header {
 .hotmelt img {
 	height: 90%;
 	width: 70%;
+}
+
+/* !!SUAJADP SECTIO*/
+
+.measures-section {
+	width: 70%;
+	margin: 2.5% auto 0 auto;
+}
+.measures-section div:first-child {
+	margin-bottom: 1%;
+}
+
+.measure-top,
+.measure-bottom {
+	font-weight: 500;
+	font-size: 1vw;
+	text-align: right;
+}
+.maquila-imgs-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 3%;
+}
+.maquila-title {
+	font-size: 2.8vw;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.maquila-imgs-section {
+	padding: 0 3%;
+}
+
+.box-color-img {
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	justify-content: space-between;
+	padding-left: 5vw;
+}
+.box-color-img img {
+	width: 40%;
+}
+
+.suajado-footer {
+	font-weight: 500;
+	font-size: 1.2vw;
+	margin-left: 4%;
 }
